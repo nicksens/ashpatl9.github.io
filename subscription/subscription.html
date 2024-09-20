@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashpatl Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLpro+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">
+                <img src="/images/logo.png" alt="NEXT Logo" class="navbar__logo--image">
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> 
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/home/home.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/products/products.html" class="navbar__links">Products</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/news/news.html" class="navbar__links">News</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/events/events.html" class="navbar__links">Events</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/subscription/subscription.html" class="button">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Registration form -->
+    <div class="main">
+        
+        <form name="Form" onsubmit="return validateForm()" >
+            <h2>JOIN THE ASHPATL 9: REJENDS COMMUNITY</h2>
+            <div class="box">
+                <label>Full Name</label>
+                <input type="text" name="name" id="name">
+                <div class="error" id="nameErr"></div>
+            </div>
+            <div class="box">
+                <label>Email Address</label>
+                <input type="text" name="email" id="email">
+                <div class="error" id="emailErr"></div>
+            </div>
+            <div class="box">
+                <label>Mobile Number</label>
+                <input type="text" name="mobile" maxlength="10" id="mobile">
+                <div class="error" id="mobileErr"></div>
+            </div>
+            <div class="box">
+                <label>Country</label>
+                <select name="country" id="country">
+                    <option>Select</option>
+                    <option>Indonesia</option>
+                    <option>United States of America</option>
+                    <option>Singapore</option>
+                    <option>Other</option>
+                </select> 
+                <div class="error" id="countryErr"></div>
+            </div>
+            <div class="box">
+                <label>Gender</label>
+                <div class="form-inline" id="gender">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label> 
+                </div>
+                <div class="error" id="genderErr"></div>
+            </div>
+
+            <div class="box">
+              
+                <div class="form-inline" id="">
+                    <label for="terms" class="terms-label"><input type="checkbox" id="terms" name="terms"> I accept the <a href="terms.html" target="_blank">terms and conditions</a></label>
+                </div>
+              
+              <div class="error" id="termsErr"></div>
+            </div>
+          
+         
+                
+            <div class="box">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__links">
+                <a href="/" class="footer__logo">
+                    <img src="/images/logo.png" alt="Logo" class="footer__logo--image">
+                </a>
+                <div class="footer__nav">
+                    <a href="/home/home.html" class="footer__nav--link">HOME</a>
+                    <a href="/products/products.html" class="footer__nav--link">PRODUCTS</a>
+                    <a href="/news/news.html" class="footer__nav--link">NEWS</a>
+                    <a href="/events/events.html" class="footer__nav--link">EVENTS</a>
+                    <a href="/subscription/subscription.html" class="footer__nav--link">SUBSCRIPTIONS</a>
+                </div>
+            </div>
+            <hr class="footer__divider">
+            <p class="website__rights">© 2024 Gamefolt and RJStudio. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
